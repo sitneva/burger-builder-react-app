@@ -5,7 +5,7 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 
 const INRGEDIENT_PRICES = {
     salad: 0.5,
-    chees: 0.7,
+    cheese: 0.7,
     bacon: 0.8,
     meat: 1.2
 }
@@ -73,6 +73,7 @@ class BurgerBuilder extends Component {
                     ingredientAdded={this.addIngredientHandler}
                     ingredientRemoved = {this.removeIngredientHandler}
                     disabled={disabledInfo}
+                    price={this.state.totalPrice}
                 ></BuildControls>
             </MyAux>
         );
