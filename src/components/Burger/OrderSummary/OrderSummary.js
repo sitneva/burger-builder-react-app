@@ -13,7 +13,6 @@ const orderSummary = (props) => {
             );
         })
 
-
     return (
         <MyAux>
             <h3>Your Order</h3>
