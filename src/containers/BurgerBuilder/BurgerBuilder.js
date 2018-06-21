@@ -13,9 +13,9 @@ const INRGEDIENT_PRICES = {
 }
 
 class BurgerBuilder extends Component {
-    constructor(props){
+    /*constructor(props){
         super(props);
-    }
+    }*/
     state = {
         ingredients: {
             salad:0,
