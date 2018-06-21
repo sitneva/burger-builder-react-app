@@ -79,6 +79,10 @@ class BurgerBuilder extends Component {
         this.setState({puchasing: true});
     }
 
+    purcaseCanselHandler = () => {
+        this.setState({puchasing: false});
+    }
+
     render() {
         const disabledInfo = {
             ...this.state.ingredients
@@ -88,7 +92,7 @@ class BurgerBuilder extends Component {
         };
         return (
             <MyAux>
-                <Modal show={this.state.puchasing}>
+                <Modal show={this.state.puchasing} modalClosed={this.purcaseCanselHandler}>
                     <OrderSummary ingredients = {this.state.ingredients}></OrderSummary>
                 </Modal>
                 <Burger ingredients={this.state.ingredients}/>
